@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 import PostNavigator from '../containers/PostNavigator';
-import Profile from '../containers/Profile';
+import ProfileNavigator from '../containers/ProfileNavigator';
 
 const {Navigator: TabNavigator, Screen: TabScreen} = createBottomTabNavigator();
 
@@ -24,7 +24,7 @@ export default function () {
                     name="Posts"
                     component={PostNavigator}
                 />
-                <TabScreen name="Profile" component={Profile} />
+                <TabScreen name="Profiles" component={ProfileNavigator} />
             </TabNavigator>
         </NavigationContainer>
     );
